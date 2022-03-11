@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criação de Sites</title>
+    </head>
+    <body>
+<main class="main">
+	<section class="calc-imc">
+		<h1>Calculadora IMC</h1>
+		<form class="form" id="form">
+            <label for="altura">
+				Nome
+				<input name="nome" id="nome" placeholder="Digite o nome" type="text" />
+			<label for="kg">
+				Kg
+				<input name="kg"  id="kg" placeholder="Peso atual" type="number" />
+			</label>
+			<label for="altura">
+				Altura
+				<input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+			</label>
+			<button onclick="calcularIMC()" type="button">Calcular</button>
+            <button onclick="limparCampos()" type="button">Limpar campos</button>
+		</form>
+	</section>
+
+    
+    <div>
+		<table>
+		<thead>
+			<tr>
+				
+				<th>NOME</th>
+				<th>PESO</th>
+				<th>ALTURA</th>
+				<th>IMC</th>
+				<th>MENSAGEM</th>
+			</tr>
+		</thead>
+		<tbody id="tabela">
+
+
+
+		</tbody>
+		</table>
+
+    </div>
+
+
+</main>
+    </body>
+    <script src="./js/script.js"></script>
+</html>
